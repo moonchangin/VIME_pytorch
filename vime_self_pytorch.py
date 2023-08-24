@@ -56,10 +56,10 @@ def vime_self(x_unlab, p_m, alpha, parameters):
     # Generate pretext task from the mask m_unlab and the unlabelled data x_unlab
     m_label, x_tilde = pretext_generator(m_unlab, x_unlab)
     
-    # Convert numpy arrays to PyTorch tensors
-    # x_tilde = torch.from_numpy(x_tilde).float()
-    # m_label = torch.from_numpy(m_label).float()
-    # x_unlab = torch.from_numpy(x_unlab).float()
+    # Convert PyTorch tensors to numpy arrays
+    x_tilde = x_tilde.float()
+    m_label = m_label.float()
+    x_unlab = x_unlab.float()
     
     # Training loop
     for epoch in range(epochs):
