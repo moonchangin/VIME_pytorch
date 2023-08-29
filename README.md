@@ -15,6 +15,7 @@ The original codebase for "VIME: Extending the Success of Self- and Semi-supervi
 
 ## Requirements
 Install these packages using conda:
+
 `conda install scikit-learn numpy pandas pytorch torchvision -c pytorch`
 
 ## Test Run
